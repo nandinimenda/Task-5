@@ -1,0 +1,192 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Header */
+header {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2a68c8;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #2a68c8, #6eb2ff);
+  color: #fff;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero .btn {
+  background: #fff;
+  color: #2a68c8;
+  padding: 0.7rem 1.4rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.hero .btn:hover {
+  background: #e6e6e6;
+}
+
+/* Product Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.product {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.product img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: contain;
+}
+.product h3 {
+  margin: 0.7rem 0;
+  font-size: 1.1rem;
+}
+.product p {
+  font-weight: bold;
+  color: #2a68c8;
+}
+.product .btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #2a68c8;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.product .btn:hover {
+  background: #1f4c94;
+}
+
+/* Forms */
+form input {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+form .btn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+form .btn:hover {
+  background: #218838;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #fff;
+  padding: 1.5rem 0;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+/* Page Section Visibility */
+.section { display: none; }
+.section.active { display: block; }
+
+/* Responsive Nav (Optional enhancements can be added later) */
+
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.hero-content .text {
+  flex: 1 1 400px;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #f0f0f0;
+}
+
+.hero-content .btn.big {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.8rem;
+}
+
+.hero-content .image {
+  flex: 1 1 300px;
+}
+
+.hero-content img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
